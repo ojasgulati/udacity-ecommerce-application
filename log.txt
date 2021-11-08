@@ -1,0 +1,12 @@
+2021-11-08 10:29:49.156  WARN 5336 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10h26m58s279ms).
+2021-11-08 12:09:01.041  INFO 5336 --- [http-nio-8080-exec-4] c.e.demo.controllers.UserController      : User created : Face
+2021-11-08 12:09:05.563  INFO 5336 --- [http-nio-8080-exec-6] c.e.demo.controllers.UserController      : User created : cool
+2021-11-08 12:09:09.760  INFO 5336 --- [http-nio-8080-exec-7] c.e.demo.controllers.UserController      : User created : okay
+2021-11-08 12:28:27.786 ERROR 5336 --- [http-nio-8080-exec-10] c.e.demo.controllers.UserController      : User not created : ok3ay
+2021-11-08 12:28:28.002 ERROR 5336 --- [http-nio-8080-exec-1] c.e.demo.controllers.UserController      : User not created : ok3ay
+2021-11-08 12:34:30.471 ERROR 5336 --- [http-nio-8080-exec-5] c.e.demo.controllers.UserController      : User not created : ok3ay
+2021-11-08 12:34:46.014 ERROR 5336 --- [http-nio-8080-exec-6] c.e.demo.controllers.UserController      : User not found by id: 10
+2021-11-08 13:29:50.107  INFO 5336 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-08 13:29:50.109  INFO 5336 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-08 13:29:50.112  INFO 5336 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-08 13:29:50.114  INFO 5336 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
