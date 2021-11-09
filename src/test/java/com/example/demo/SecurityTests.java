@@ -39,6 +39,14 @@ public class SecurityTests {
 	}
 
 	@Test
+	public void loginWithUnregisteredUser() throws Exception{
+		MvcResult mvcResult = performLoginAttempt("foo", "bar");
+		int expected = 401;
+		int actual = mvcResult.getResponse().getStatus();
+		assertEquals(expected, actual);
+	}
+
+	@Test
 	public void requestWithValidToken() throws Exception{
 		createUser(username, password);
 		MvcResult mvcResult = performLoginAttempt(username, password);
@@ -50,7 +58,7 @@ public class SecurityTests {
 	@Test
 	public void requestWithInvalidToken() throws Exception{
 		mockMvc.perform(MockMvcRequestBuilders.get("/api/user/" + username)
-				.header("Authorization", "Bilal")).andExpect(status().isForbidden());
+				.header("Authorization", "Bilal")).andExpect(status().isUnauthorized());
 	}
 
 	private void createUser(String username, String password) throws Exception{
